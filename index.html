@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز إيمان - للمساج والعناية النسائية</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- الهيدر -->
+    <header id="main-header">
+        <div class="container header-content">
+            <!-- اللوجو والاسم -->
+            <div class="logo">
+                <img src="images/logo.png" alt="لوجو إيمان">
+                <span class="brand-name">مركز إيمان</span>
+            </div>
+
+            <!-- الروابط (تم إضافة الأقسام الجديدة) -->
+            <nav id="main-nav">
+                <a href="#hero">الرئيسية</a>
+                <a href="#services">خدماتنا</a>
+                <a href="#services-gallery">معرض الصور</a>
+                <a href="#mobile-services">الخدمات المنزلية</a>
+                <a href="#offers">العروض</a>
+                <a href="#testimonials">آراء العميلات</a>
+                <!-- زر الحجز المميز -->
+                <a href="https://wa.me/966547421669" class="cta-button">احجزي الآن</a>
+            </nav>
+
+            <!-- زر القائمة للجوال -->
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- قسم الهيرو (Hero) -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-content animate-up">
+            <span class="location-badge"><i class="fas fa-map-marker-alt"></i> الرياض فقط</span>
+            <h1>مركز <span class="highlight-name">إيمان</span> للجمال والاسترخاء</h1>
+            <p>تجربة استثنائية للعناية بالجسم والروح مع أمهر المختصات العربيات والآسيويات.</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/966547421669" class="btn-wa"><i class="fab fa-whatsapp"></i> حجز موعد (1)</a>
+                <a href="https://wa.me/966559490293" class="btn-wa"><i class="fab fa-whatsapp"></i> حجز موعد (2)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الخدمات -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <h2 class="section-title reveal">خدماتنا المتميزة</h2>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="card-icon"><i class="fas fa-spa"></i></div>
+                    <h3>مساج استرخائي</h3>
+                    <p>جلسات احترافية تخلصك من ضغوط العمل وتجدد نشاط جسمك.</p>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 0.2s;">
+                    <div class="card-icon"><i class="fas fa-hot-tub"></i></div>
+                    <h3>حمام مغربي</h3>
+                    <p>تنظيف عميق للبشرة بالبخار والصابون المغربي الفاخر.</p>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 0.4s;">
+                    <div class="card-icon"><i class="fas fa-face-smile"></i></div>
+                    <h3>تنظيف بشرة</h3>
+                    <p>نضارة فورية وعناية فائقة لبشرتك بأحدث المستحضرات الطبيعية.</p>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 0.6s;">
+                    <div class="card-icon"><i class="fas fa-hand-sparkles"></i></div>
+                    <h3>بديكير ومناكير</h3>
+                    <p>عناية كاملة بجمال يديكِ وقدميكِ في جو من الرفاهية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- قسم معرض الصور للخدمات -->
+    <section id="services-gallery" class="section-padding">
+        <div class="container">
+            <h2 class="section-title reveal">صور من خدماتنا</h2>
+            <div class="img-gallery-grid">
+
+                <!-- خدمة 1 -->
+                <div class="gallery-card reveal">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800" alt="مساج ناعم">
+                    <div class="card-overlay">
+                        <h3>Soft - مساج ناعم</h3>
+                    </div>
+                </div>
+
+                <!-- خدمة 2 -->
+                <div class="gallery-card reveal" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=800" alt="مساج هارد">
+                    <div class="card-overlay">
+                        <h3>Hard - مساج هارد</h3>
+                    </div>
+                </div>
+
+                <!-- خدمة 3 -->
+                <div class="gallery-card reveal" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=800" alt="Relax">
+                    <div class="card-overlay">
+                        <h3>Relax - استرخائي</h3>
+                    </div>
+                </div>
+
+                <!-- خدمة 4 -->
+                <div class="gallery-card reveal">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=800" alt="تنظيف بشرة">
+                    <div class="card-overlay">
+                        <h3>Cleaning Skin - تنظيف بشرة</h3>
+                    </div>
+                </div>
+
+                <!-- خدمة 5 -->
+                <div class="gallery-card reveal" style="transition-delay: 0.1s;">
+                    <img src="images/حمام مغربى.webp" alt="حمام مغربي">
+                    <div class="card-overlay">
+                        <h3>Moroccan Bath - حمام مغربي</h3>
+                    </div>
+                </div>
+
+                <!-- خدمة 6 -->
+                <div class="gallery-card reveal" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800" alt="جاكوزي">
+                    <div class="card-overlay">
+                        <h3>Jacuzzi - جاكوزي</h3>
+                    </div>
+                </div>
+
+                <!-- خدمة 7 -->
+                <div class="gallery-card reveal">
+                    <img src="https://images.unsplash.com/photo-1583416750470-965b2707b355?q=80&w=800" alt="ساونا">
+                    <div class="card-overlay">
+                        <h3>Sauna - ساونا</h3>
+                    </div>
+                </div>
+
+                <!-- خدمة 8 -->
+                <div class="gallery-card reveal" style="transition-delay: 0.1s;">
+                    <img src="images/مساج رجل.webp" alt="مساج قدم">
+                    <div class="card-overlay">
+                        <h3>Foot Massage - مساج أرجل</h3>
+                    </div>
+                </div>
+
+                <!-- خدمة 9 -->
+                <div class="gallery-card reveal" style="transition-delay: 0.2s;">
+                    <img src="images/حجامه.jpg" alt="حجامة">
+                    <div class="card-overlay">
+                        <h3>Cupping - حجامة</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم العروض والباقات -->
+    <section id="offers" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title reveal">أقوى العروض والباقات</h2>
+            <div class="offers-grid">
+                <div class="offer-card reveal">
+                    <div class="offer-badge">الأكثر طلباً</div>
+                    <h3>الباقة الملكية</h3>
+                    <ul>
+                        <li>مساج استرخائي (60 دقيقة)</li>
+                        <li>حمام مغربي ملكي</li>
+                        <li>تنظيف بشرة طبيعي</li>
+                    </ul>
+                    <div class="price">499 ريال</div>
+                    <a href="https://wa.me/966547421669" class="offer-btn">احجزي الآن</a>
+                </div>
+
+                <div class="offer-card reveal" style="transition-delay: 0.2s;">
+                    <h3>باقة النضارة</h3>
+                    <ul>
+                        <li>تنظيف بشرة عميق</li>
+                        <li>بديكير ومناكير</li>
+                        <li>ماسك للوجه مجاني</li>
+                    </ul>
+                    <div class="price">299 ريال</div>
+                    <a href="https://wa.me/966547421669" class="offer-btn">احجزي الآن</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم آراء العميلات -->
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <h2 class="section-title reveal">ماذا قالت عميلاتنا؟</h2>
+            <div class="testi-grid">
+                <div class="testi-card reveal">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"تجربة المساج المنزلي كانت رائعة، المختصة آسيوية ومحترفة جداً ونفسيتها جميلة، النظافة 10/10."</p>
+                    <h4>سارة القحطاني</h4>
+                </div>
+                <div class="testi-card reveal" style="transition-delay: 0.2s;">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"الحمام المغربي عندهم بطل، والمنتجات ريحتها تجنن. أحلى شيء إنهم يلتزمون بالوقت."</p>
+                    <h4>نورة محمد</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- الخدمات المتنقلة -->
+    <section id="mobile-services" class="section-padding dark-section">
+        <div class="container mobile-layout">
+            <div class="mobile-text reveal">
+                <h2 class="gold-text">خدمات منزلية وفندقية فاخرة</h2>
+                <p>نحن نأتيكِ أينما كنتِ في الرياض لنوفر لكِ جلسات السبا والتدليك بخصوصية تامة في منزلك.</p>
+                <ul class="check-list">
+                    <li><i class="fas fa-check-circle"></i> مختصات بمهارة عالية (عربيات وآسيويات).</li>
+                    <li><i class="fas fa-check-circle"></i> نصلكِ للفنادق والمنازل داخل الرياض.</li>
+                    <li><i class="fas fa-check-circle"></i> التزام تام بالخصوصية والنظافة والتعقيم.</li>
+                </ul>
+                <a href="https://wa.me/966547421669" class="gold-btn">طلب الخدمة المتنقلة</a>
+            </div>
+            <div class="mobile-image reveal">
+                <!-- صورة تعبيرية للمساج بدلاً من الصورة السابقة -->
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1000&auto=format&fit=crop"
+                    alt="Home Service">
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-box reveal">
+                <h3>مركز إيمان</h3>
+                <p>الوجهة الأولى للاسترخاء والجمال في مدينة الرياض.</p>
+            </div>
+            <div class="footer-box reveal">
+                <h3>تواصل مباشر</h3>
+                <p>عن طريق الواتساب فقط:</p>
+                <a href="https://wa.me/966547421669" class="wa-link">0547421669</a>
+                <a href="https://wa.me/966559490293" class="wa-link">0559490293</a>
+            </div>
+            <div class="footer-box reveal">
+                <h3>نطاق العمل</h3>
+                <p><i class="fas fa-map-marker-alt"></i> الرياض فقط، المملكة العربية السعودية</p>
+            </div>
+        </div>
+        <div class="sub-footer">
+            <p>&copy; 2025 مركز إيمان - جميع الحقوق محفوظة</p>
+            <p>Design and programming by<a
+                    href="https://www.facebook.com/profile.php?id=100090592885243&mibextid=ZbWKwL"
+                    target="_blank"><strong style="color: #d4af37;">GMTWEB</strong> </a> </p>
+        </div>
+    </footer>
+
+    <!-- زر الواتساب العائم -->
+    <a href="https://wa.me/966547421669" class="wa-float pulse">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JS للأنيميشن -->
+    <script>
+        // أنيميشن عند التمرير (Reveal on Scroll)
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var revealTop = reveals[i].getBoundingClientRect().top;
+                var revealPoint = 150;
+                if (revealTop < windowHeight - revealPoint) {
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
