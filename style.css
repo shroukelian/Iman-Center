@@ -88,7 +88,7 @@ body {
 /* Hero Section */
 .hero-section {
     height: 100vh;
-    background: url('images/hero.webp') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=800') center/cover no-repeat;
     display: flex; 
     align-items: center; /* سنعتمد التوسيط مع إضافة padding دفع علوي */
     justify-content: center;
@@ -431,7 +431,7 @@ body {
     }
 
     .brand-name {
-        font-size: 2rem;
+        font-size: 1.6rem;
         gap: 8px;
     }
 
