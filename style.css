@@ -1,6 +1,6 @@
 :root {
-    --primary-bg: #3d003d; /* البنفسجي الغامق من اللوجو */
-    --gold: #d4af37;       /* الذهبي */
+    --primary-bg: #3d003d;
+    --gold: #d4af37;      
     --dark-grey: #1a1a1a;
     --text-light: #f4f4f4;
     --wa-green: #25d366;
@@ -46,37 +46,34 @@ body {
     background: var(--gold); color: var(--primary-bg) !important;
     padding: 8px 25px !important; border-radius: 50px;
 }
-/* تنسيق اللوجو والاسم */
 .logo {
     display: flex;
     align-items: center;
-    gap: 15px; /* المسافة بين اللوجو والاسم */
+    gap: 15px; 
     text-decoration: none;
 }
 
 .logo img {
-    height: 65px; /* حجم اللوجو */
+    height: 65px; 
     filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.5));
 }
 
 .brand-name {
-    color: var(--gold); /* اللون الذهبي */
+    color: var(--gold);
     font-size: 1.8rem;
     font-weight: 900;
     font-family: 'Cairo', sans-serif;
     letter-spacing: 1px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    white-space: nowrap; /* لمنع الاسم من النزول لسطر جديد */
+    white-space: nowrap; 
 }
 
-/* تحسين شكل الهيدر ليتناسب مع الإضافة الجديدة */
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* تعديل للهواتف لضمان عدم تداخل الاسم مع القائمة */
 @media (max-width: 768px) {
 
     .logo img {
@@ -85,17 +82,16 @@ body {
 }
 
 /* Hero Section */
-/* Hero Section */
 .hero-section {
     height: 100vh;
     background: url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=800') center/cover no-repeat;
     display: flex; 
-    align-items: center; /* سنعتمد التوسيط مع إضافة padding دفع علوي */
+    align-items: center;
     justify-content: center;
     position: relative; 
     text-align: center; 
     color: white;
-    padding-top: 70px; /* دفع المحتوى لأسفل قليلاً ليعطي راحة بصرية */
+    padding-top: 70px; 
 }
 
 .hero-bg-overlay {
@@ -180,10 +176,9 @@ body {
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5); 
 }
 
-/* ضبط خاص للموبايل لضمان نزول المحتوى */
 @media (max-width: 768px) {
     .hero-section {
-        padding-top: 120px; /* نزول إضافي في الموبايل ليعطي شكلاً أفضل */
+        padding-top: 120px; 
     }
     .hero-content h1 { 
         font-size: 2.2rem; 
@@ -192,7 +187,7 @@ body {
         font-size: 1.1rem;
     }
     .btn-wa {
-        width: 100%; /* جعل الأزرار تأخذ العرض كامل في الموبايل */
+        width: 100%;
         max-width: 280px;
         justify-content: center;
     }
@@ -235,7 +230,6 @@ body {
     background: var(--gold); color: #000; text-decoration: none;
     padding: 15px 40px; border-radius: 50px; font-weight: bold; display: inline-block;
 }
-/* تنسيقات معرض صور الخدمات */
 .img-gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -248,7 +242,7 @@ body {
     height: 250px;
     border-radius: 15px;
     overflow: hidden;
-    border: 3px solid var(--gold); /* إطار ذهبي كما في شعار إيمان */
+    border: 3px solid var(--gold); 
     cursor: pointer;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
@@ -266,7 +260,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(61, 0, 61, 0.4); /* بنفسجي شفاف */
+    background: rgba(61, 0, 61, 0.4); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -278,23 +272,21 @@ body {
     font-size: 1.6rem;
     font-weight: 800;
     text-align: center;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* لجعل النص واضحاً فوق أي صورة */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); 
     padding: 0 10px;
 }
 
-/* تأثير عند مرور الماوس */
 .gallery-card:hover img {
     transform: scale(1.1);
 }
 
 .gallery-card:hover .card-overlay {
-    background: rgba(61, 0, 61, 0.2); /* تخفيف الشفافية عند التمرير */
+    background: rgba(61, 0, 61, 0.2);
 }
 
-/* تعديلات للجوال */
 @media (max-width: 600px) {
     .img-gallery-grid {
-        grid-template-columns: 1fr; /* صورة واحدة في السطر في الجوالات الصغيرة */
+        grid-template-columns: 1fr;
     }
     .gallery-card {
         height: 200px;
@@ -342,7 +334,6 @@ body {
     display: block;
 }
 }
-/* تنسيق قسم العروض */
 .bg-light { background-color: #fcfaff; }
 
 .offers-grid {
@@ -395,7 +386,6 @@ body {
 }
 .offer-btn:hover { background: var(--gold); color: var(--primary-bg); }
 
-/* تنسيق آراء العميلات */
 .testi-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -417,15 +407,13 @@ body {
 #main-nav a {
     color: var(--text-light);
     text-decoration: none;
-    margin-right: 12px; /* تقليل المسافة قليلاً لتناسب الروابط الجديدة */
+    margin-right: 12px;
     font-weight: 600;
-    font-size: 0.95rem; /* تصغير الخط قليلاً ليظهر بشكل أرشق */
+    font-size: 0.95rem; 
     transition: 0.3s;
 }
-/* ضبط الموبايل - Media Queries */
 @media (max-width: 768px) {
     
-    /* 1. ضبط الهيدر والقائمة */
     .header-content {
         padding: 10px 15px;
     }
@@ -439,11 +427,10 @@ body {
         height: 45px;
     }
 
-    /* تحويل القائمة الجانبية */
     #main-nav {
         position: fixed;
         top: 0;
-        right: -100%; /* مخفية تماماً جهة اليمين */
+        right: -100%;
         width: 250px;
         height: 100vh;
         background: var(--primary-bg);
@@ -456,7 +443,7 @@ body {
     }
 
     #main-nav.mobile-active {
-        right: 0; /* تظهر عند الضغط */
+        right: 0;
     }
 
     #main-nav a {
@@ -481,7 +468,6 @@ body {
         z-index: 1000;
     }
 
-    /* 2. ضبط قسم الهيرو (البطل) */
     .hero-content h1 {
         font-size: 2.2rem;
     }
@@ -493,7 +479,6 @@ body {
         margin: 30px auto 0;
     }
 
-    /* 3. توسيط الفوتر بالكامل */
     .main-footer {
         text-align: center;
     }
@@ -516,7 +501,6 @@ body {
         padding: 20px;
     }
 
-    /* 4. ضبط الخدمات المتنقلة */
     .mobile-layout {
         text-align: center;
     }
